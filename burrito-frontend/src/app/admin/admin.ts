@@ -20,8 +20,12 @@ export class AdminComponent implements OnInit {
   editandoId: number | null = null;
   mostrarFormulario = false;
 
-  private apiLibros = 'http://localhost:3000/libros';
-  private apiStats = 'http://localhost:3000/dashboard/stats';
+  //private apiLibros = 'http://localhost:3000/libros';
+  //private apiStats = 'http://localhost:3000/dashboard/stats';
+
+  private baseUrl = 'https:https://proyecto-final-avance-ii-completo.vercel.app.com';
+  private apiLibros = `${this.baseUrl}/libros`;
+  private apiStats = `${this.baseUrl}/dashboard/stats`;
 
   constructor(private fb: FormBuilder, private http: HttpClient) {
     this.libroForm = this.fb.group({
