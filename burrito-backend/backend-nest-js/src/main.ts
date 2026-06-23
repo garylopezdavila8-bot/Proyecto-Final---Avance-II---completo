@@ -17,7 +17,7 @@ async function bootstrap() {
 
   
   app.enableCors({
-    origin: ['https://proyecto-final-avance-ii-completo.vercel.app'//,'http://localhost:4200'
+    origin: ['https://proyecto-final-avance-ii-completo-2.onrender.com'//,'http://localhost:4200'
     ],
     credentials: true,
   });

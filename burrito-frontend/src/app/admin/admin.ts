@@ -23,7 +23,7 @@ export class AdminComponent implements OnInit {
   //private apiLibros = 'http://localhost:3000/libros';
   //private apiStats = 'http://localhost:3000/dashboard/stats';
 
-  private baseUrl = 'https:https://proyecto-final-avance-ii-completo.vercel.app.com';
+  private baseUrl = 'https://proyecto-final-avance-ii-completo-2.onrender.com';
   private apiLibros = `${this.baseUrl}/libros`;
   private apiStats = `${this.baseUrl}/dashboard/stats`;
 
