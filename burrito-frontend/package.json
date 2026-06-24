@@ -2,13 +2,12 @@
   "name": "burrito-frontend",
   "version": "0.0.0",
   "scripts": {
-    "ng": "ng",
-    "start": "ng serve",
-    "build": "npx ng build",
-    "watch": "ng build --watch --configuration development",
-    "test": "ng test",
-    "serve:ssr:burrito-frontend": "node dist/burrito-frontend/server/server.mjs"
-  },
+  "ng": "ng",
+  "start": "ng serve",
+  "build": "ng build",
+  "test": "ng test",
+  "lint": "ng lint"
+},
   "private": true,
   "packageManager": "npm@11.13.0",
   "dependencies": {
@@ -25,8 +24,8 @@
     "tslib": "^2.3.0"
   },
   "devDependencies": {
+   "@angular/cli": "22.0.0",
 
-    
     "@types/express": "^5.0.1",
 
     "@types/node": "^20.17.19",
