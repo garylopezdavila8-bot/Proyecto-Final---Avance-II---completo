@@ -31,7 +31,7 @@ export class SeedService implements OnModuleInit {
       // 3. Crear el nuevo registro usando la estructura de tu entidad User
       const newAdmin = this.userRepository.create({
         nombre: 'Administrador Principal',
-        email: 'admin@burritolector.com',
+        email: 'garylopezdavila8@gmail.com',
         password: hashedPassword,
         rol: 'admin', // Coincide perfectamente con tu guard de Angular
       });
