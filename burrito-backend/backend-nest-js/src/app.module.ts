@@ -9,6 +9,7 @@ import { LibrosModule } from './libros/libros.module';
 import { ResenasModule } from './resenas/resenas.module';
 import { AfinidadesModule } from './afinidades/afinidades.module';
 import { DashboardModule } from './dashboard/dashboard.module';
+//import { User } from '../entities/user.entity';
 
 @Module({
   imports: [
