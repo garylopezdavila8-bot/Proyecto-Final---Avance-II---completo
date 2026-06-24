@@ -15,9 +15,12 @@ async function bootstrap() {
 
   const app = await NestFactory.create<NestExpressApplication>(AppModule);
 
-  
+  // CONFIGURACIÓN DE CORS CORREGIDA:
+  // Ahora permite que tu Frontend de Render (-3) y tu entorno local se conecten al Backend.
   app.enableCors({
-    origin: ['https://proyecto-final-avance-ii-completo-2.onrender.com'//,'http://localhost:4200'
+    origin: [
+      'https://proyecto-final-avance-ii-completo-3.onrender.com',
+      //'http://localhost:4200'
     ],
     credentials: true,
   });
@@ -44,7 +47,6 @@ async function bootstrap() {
   const document = SwaggerModule.createDocument(app, config);
   SwaggerModule.setup('api', app, document);
 
-  
   const port = process.env.PORT || 3000;
   await app.listen(port);
 }
