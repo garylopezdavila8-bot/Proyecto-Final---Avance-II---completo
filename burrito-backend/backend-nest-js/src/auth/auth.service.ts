@@ -16,15 +16,15 @@ export class AuthService implements OnModuleInit {
   ) {}
 
   async onModuleInit(): Promise<void> {
-    const adminEmail = 'admin@burrito.com';
-    const adminExists = await this.userRepository.findOneBy({ email: adminEmail });
+    const adminEmail = 'garylopezdavila@gmail.com';
+    const adminExists = await this.userRepository.findOneBy({ email: "garylopezdavila@gmail.com" });
 
     if (!adminExists) {
-      const hashedPassword = await bcrypt.hash('admin123', 10);
+      const hashedPassword = await bcrypt.hash('112233', 10);
       await this.userRepository.save(
         this.userRepository.create({
           nombre: 'Administrador',
-          email: adminEmail,
+          email: "garylopezdavila@gmail.com",
           password: hashedPassword,
           rol: 'admin',
         }),
